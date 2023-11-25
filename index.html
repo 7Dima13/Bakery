@@ -11,18 +11,22 @@
   <body>
     <header>
       <div class="container">
-        <a href="/">
-          <img src="./image/logo.svg" alt="Logo Сучасна пекарня" />
-        </a>
-        <nav>
-          <ul>
-            <li><a class="link" href="#tradition_section">Наші традиції</a></li>
-            <li><a class="link" href="#chefs_secvtion">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats_secvtion">Формати</a></li>
-            <li><a class="link" href="#contact_secvtion">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img src="./image/logo.svg" alt="Logo Сучасна пекарня" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#tradition_section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs_secvtion">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats_secvtion">Формати</a></li>
+              <li><a class="link" href="#contact_secvtion">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -33,7 +37,7 @@
           </h1>
         </div>
       </section>
-      <section>
+      <section class="adventages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="adventages-list">
@@ -45,31 +49,42 @@
       </section>
       <section class="tradition_section section" id="tradition_section">
         <div class="container">
-          <h2 class="tradition-title section-title">Новий формат традицій</h2>
-          <p class="tradition_text">
-            <span class="accent"> shop bakery</span> — це пекарня, яка взяла все
-            найкраще, і зберегла смак традиційної випічки та натуральність
-            інгредієнтів.
-          </p>
-          <p class="tradition_text">
-            Ми працюємо як найвідоміші мережі —
-            <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
-            стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./image/baker-man.jpg"
-            alt="Чолівік диввится на хліб із посмішкою "
-          />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions_text">
+                <span class="accent"> shop bakery</span> — це пекарня, яка взяла
+                все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions_text limited">
+                Ми працюємо як найвідоміші мережі —
+                <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
+                стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <img
+              src="./image/baker-man.jpg"
+              alt="Чолівік диввится на хліб із посмішкою "
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chefs_secvtion">
         <div class="container">
-          <h2 class="chefs-title section-title">
+          <h2 class="chefs-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img
+                  class="chef-photo"
+                  src="./image/nastya-chef.jpg"
+                  alt="Nastya-chef"
+                />
                 <h3 class="chef_title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -78,6 +93,11 @@
             </li>
             <li>
               <article>
+                <img
+                  class="chef-photo"
+                  src="./image/vlad-chef.jpg"
+                  alt="Vlad-chef"
+                />
                 <h3 class="chef_title">Влад</h3>
                 <p>Привіт, я Влад!</p>
                 <p>
@@ -92,10 +112,10 @@
       </section>
       <section class="section" id="formats_secvtion">
         <div class="container">
-          <h2 class="formats-title section-title">Формат</h2>
-          <ul>
-            <li>
-              <article>
+          <h2 class="formats-title section-title centered">Формат</h2>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-tex">
                   <p>Площа: до 120 м2</p>
@@ -108,8 +128,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-tex">
                   <p>Площа: до 25 м2</p>
@@ -119,8 +139,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-tex">
                   <p>Площа: до 15 м2</p>
@@ -151,7 +171,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <a href="/">
           <img src="./image/logo.svg" alt="Logo Сучасна пекарня" />
